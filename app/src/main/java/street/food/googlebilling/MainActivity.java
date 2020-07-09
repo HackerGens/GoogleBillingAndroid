@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements PurchasesUpdatedL
         if(billingClient.isReady())
         {
             SkuDetailsParams params = SkuDetailsParams.newBuilder()
-                    .setSkusList(Arrays.asList("goobme_basic_plan","goombe_plus_plan"))
+                    .setSkusList(Arrays.asList("Your_Product_id1","Your_Product_id2"))
                     .setType(BillingClient.SkuType.INAPP)
                     .build();
             billingClient.querySkuDetailsAsync(params, new SkuDetailsResponseListener() {
